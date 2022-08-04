@@ -10,7 +10,7 @@
   
     
 /* ------------social media icons---------*/
-       #icons{position: fixed; z-index: 2000; }
+       #icons{position: fixed; z-index: 4000; }
        #icons li { text-decoration: none;
           list-style: none;display: inline-block;
           }
@@ -21,19 +21,20 @@
 /*-------------Menu-----------*/
     ul.menu{
        list-style-type: none;  
-       padding-left: 370px;
+       padding-left: 40%;
        padding-top: 15px;
        display: flex;
        margin-top: -20px;
-       margin-right: 300px; 
+       
        height: 65px;
        width: 100%;
        z-index: 1000;
        float: left;
        background-color: white;
        position: fixed;
+       overflow-x: auto;
        border-bottom-style: double;}
-   
+       
     ul li:hover{
       color: rgb(44, 39, 71);
     }
@@ -58,13 +59,23 @@
        display:block;cursor:pointer;
     }
     
-    #logo {position:relative; top: 120px;left: 370px; z-index:-10; }
+
+
+   .logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+top: 80%;
+
+padding-top: 150px;
+ }
+
 
 /*------ slider-pics------ */
     .slide-container {
          width: 100%;
          height:500px; 
-         display: flex; 
+         display:flex; 
          overflow-x: auto;
           margin-top: 200px;
          scroll-snap-points-x: repeat(600px);
@@ -73,18 +84,14 @@
   
    
 #tagline {
-    margin-left: 320px ;
-    position: relative;
+    display: block;
+margin-left: auto;
+margin-right: auto;
     margin-top: 80px;
     padding-bottom: 50px;
 
 }
      
-  
- 
-
- 
-  
 
 
     </style>
@@ -134,7 +141,7 @@
 
    
 
-     <img id="logo" width="500px" height="100px" src="./images/LOGO.png" alt="logo">
+     <img id="logo" width="500px" height="100px" src="./images/LOGO.png" alt="logo" class="logo" >
 
      <div class="slide-container">
             <img id="burger" src="./images/slider-images/burger.jpg" class="slider-image">
